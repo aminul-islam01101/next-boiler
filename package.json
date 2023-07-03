@@ -13,7 +13,7 @@
     "prettier:fix": "prettier --write \"app/**/*.+(js|ts|tsx|json)\"",
     "lint-prettier-fix": "yarn lint:fix && yarn prettier:fix  && yarn lint",
     "lint-prettier-check": "yarn lint:check && yarn prettier:check",
-    "lint-prettier": "yarn lint-prettier-fix && yarn prettier:check"
+    "lint-prettier": "yarn lint-prettier-fix && yarn lint-prettier-check"
    
   },
   "lint-staged": {
