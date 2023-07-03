@@ -13,8 +13,10 @@
     "prettier:fix": "prettier --write \"app/**/*.+(js|ts|tsx|json)\"",
     "lint-prettier-fix": "yarn lint:fix && yarn prettier:fix  && yarn lint",
     "lint-prettier-check": "yarn lint:check && yarn prettier:check",
-    "lint-prettier": "yarn lint-prettier-fix && yarn prettier:check",
-    "lint-staged": "yarn lint-prettier"
+    "lint-prettier": "yarn lint-prettier-fix && yarn prettier:check"
+   
+  },"lint-staged": {
+    "app/**/*.ts": "yarn lint-prettier"
   },
   "dependencies": {
     "@types/node": "20.3.2",
@@ -42,6 +44,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.8",
-    "eslint-formatter-pretty": "^5.0.0"
+    "eslint-formatter-pretty": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
   }
 }
