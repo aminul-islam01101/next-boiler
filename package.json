@@ -17,8 +17,9 @@
    
   },
   "lint-staged": {
-    "app/**/*.ts": "yarn lint-prettier"
+    "app/**/*.{ts,tsx,js}": "yarn lint-prettier"
   },
+  
   "dependencies": {
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
