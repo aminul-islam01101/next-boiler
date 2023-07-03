@@ -2,8 +2,6 @@ import getUser from '@/app/lib/getUser';
 import getUserPosts from '@/app/lib/getUserPosts';
 import { Post, User } from '@/app/types';
 import type { Metadata } from 'next';
-import { Suspense } from 'react';
-import UserPosts from './components/UserPosts';
 
 type Params = {
   params: {
@@ -34,9 +32,9 @@ export default async function UserPage({ params: { userId } }: Params) {
     <>
       <h2>{user.name}</h2>
       <br />
-      <Suspense fallback={<h2>Loading...</h2>}>
+      {/* <Suspense fallback={<h2>Loading...</h2>}>
         <UserPosts promise={userPostsData} />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
