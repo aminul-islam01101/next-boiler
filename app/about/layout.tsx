@@ -10,7 +10,7 @@ const AboutLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <nav>
-        <h1 className="text-2xl">About nav bar</h1>
+        <h1 className="text-2xl">About nav bar test</h1>
       </nav>
       {children}
     </>
