@@ -20,6 +20,7 @@
 
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+   "eslint-config-prettier",
 
     "plugin:prettier/recommended",
     "prettier"
@@ -45,6 +46,7 @@
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/unbound-method": "off",
     "consistent-return": 0,
+    
     "react/function-component-definition":[2, { "namedComponents": ["arrow-function","function-expression","function-declaration" ] }],
     "@typescript-eslint/no-misused-promises": [
       "error",
@@ -58,7 +60,7 @@
     "spaced-comment": [
       "error",
       "always",
-      { "markers": ["!", "*", "?", "$", "#", "@", "&", "%", "g"] }
+      { "markers": ["!", "*", "?", "$", "#", "@", "&", "%", "g", "FIX-ME","^"] }
     ],
 
     "prettier/prettier": [
@@ -74,4 +76,4 @@
     ]
   },
   "plugins": ["@typescript-eslint", "import", "react-hooks", "prettier"]
-}
+}                    
